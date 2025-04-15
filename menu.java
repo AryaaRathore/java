@@ -9,8 +9,8 @@ public class menu {
         System.out.println("3. Multiplication");
         System.out.println("4. Division");
         System.out.println("select your choice(1 to 4) :");
-         ch = sc.next().charAt(0);
-        switch(ch){
+         int op=sc .nextInt();
+        switch(op){
             case 1:
             System.out.println("enter number a:");
              a= sc.nextInt();
