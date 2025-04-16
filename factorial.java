@@ -5,7 +5,7 @@ public class factorial {
         for(int i =1;i<=num;i++){
             fact *=i;
         }
-        System.out.printf("fact of num %d=%d",num,fact);
+        System.out.print(fact);
     }
     
 }
