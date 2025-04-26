@@ -17,7 +17,9 @@ public class arraysum {
            sum=sum+arr[j];
             
         }
+    
+        }
    System.out.println("sum is "+sum);
                }
-            } 
+             
 
