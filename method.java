@@ -3,7 +3,7 @@ public class method {
     System.out.println("hello");
     }
     public static void main(String[] args) {
-        sum();
+        sum();//fun calling
     }
 }
 
@@ -14,7 +14,7 @@ public class method {
         multi();
     }
 }*/
-/*void sum(){
+/*void sum(){//
     System.out.println("hello");
 
 }
