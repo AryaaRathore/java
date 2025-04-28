@@ -1,8 +1,6 @@
-import java.util.Scanner;
-
 class AllProgram {
     static void naturalnum(int n){
-        for(int i=0;i<=n;i++){
+        for(int i=n;i>=0;i--){
             System.out.println(i);
 
         }
