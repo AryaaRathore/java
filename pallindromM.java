@@ -7,15 +7,17 @@ public class pallindromM {
             int digit=n%10;
             res=res*10+digit;
             n=n/10;
-            if(original==res){
+        }
+            if(res==original){
                 System.out.println("pallindrom");
             }
-        
+            else{
+                System.out.println("not pallindrom");
+            }
         }
         
-        }
-        public static void main(String[] args) {
-            
+        
+        public static void main(String[] args) {  
             pallindrom(191);
         }
     
