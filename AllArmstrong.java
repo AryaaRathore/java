@@ -1,14 +1,15 @@
  class AllArmstrong {
     static void Armstrong(int n){
-        for(int i=1;i<=n;i++){
+        for(int i=1;i<n;i++){
             int r;
             int sum=0;
             int original=i;
             while(i>0){
                 int digit=i%10;
                 r=digit;
-                i=i/10;
                 sum=sum+(r*r*r);
+                i=i/10;
+                
             }
         
         if(sum==original){
