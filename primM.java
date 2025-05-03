@@ -12,7 +12,7 @@
         
     }
     public static void main(String[] args) {
-        prime(5);
+        prime(33);
     }
     
 }
