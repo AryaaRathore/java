@@ -6,6 +6,7 @@ class Vehicle{
 class Bike extends Vehicle{
 void run(){
     System.out.println("running");
+    super.run();
 }
 }
 public class main1 {
