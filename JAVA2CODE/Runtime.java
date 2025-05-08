@@ -1,3 +1,4 @@
+package JAVA2CODE;
 class Vehicle{
     void speed(){
         System.out.println("fast");
