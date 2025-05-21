@@ -2,7 +2,7 @@ package JAVA2CODE;
 abstract class payment{//incomplete body and iska obj nahi bn sakta   
     abstract void pay(int a);//but iske child se ise call kar sakte hai
     void success(){
-        System.out.println("payment done");
+        System.out.println("payment done");//abstract class and abstract method
     }
     
 }

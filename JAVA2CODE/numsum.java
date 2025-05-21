@@ -9,9 +9,6 @@ class Hello{
     int display(){
         return a+b;
     }
-  //  void display(){
-    //  System.out.println(a+b);
-    //}
 }
 public class numsum {
     public static void main(String[] args) {
