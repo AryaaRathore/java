@@ -21,7 +21,7 @@ public Student(int age,String name,int enrollNo){
 
  class sortbyname implements  Comparator<Student>{
     public int compare(Student s1,Student s2){
-        return s1.name.compareTo(s2.name);
+       return s1.name.compareTo(s2.name);
 
     }
     
@@ -43,10 +43,10 @@ class sortbyage implements  Comparator<Student>{
    
        System.out.println("according to name:");
     Collections.sort(list, new sortbyname());
-        for(Student s1 :list){
-            System.out.println(s1);
+      for(Student s1 :list){
+           System.out.println(s1);
             
-        }
+       }
         System.out.println("according to age:");
         Collections.sort(list,new sortbyage());//age acording
         for(Student s2 :list){
