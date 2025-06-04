@@ -7,7 +7,7 @@ class MyThread extends Thread{
 public class thread {
     public static void main(String[] args) {
         MyThread obj=new MyThread();
-        obj.start();
+        obj.start();//1st main
         System.out.println("dhun");
     }
     
