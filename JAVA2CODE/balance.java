@@ -12,8 +12,7 @@ class withdraw extends Thread
 
     public void run()
     {
-        //synchronized(withdraw.class)
-        //{
+    
         
         if(totalbalance>=amount)
         {
@@ -37,7 +36,7 @@ class withdraw extends Thread
         }
         }
     }
-//}
+
 public class balance
  {
     public static void main(String[] args) 
@@ -45,11 +44,7 @@ public class balance
         withdraw b1=new withdraw(800);
         withdraw b2=new withdraw(700);
         b1.start();
-       // try {
-         //   b1.join();
-        //} catch (Exception e) {
-            // TODO: handle exception
-        //}
+    
        b2.start();
 
     }
