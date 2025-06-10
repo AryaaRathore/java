@@ -7,7 +7,7 @@ public class Darray2 {
             for(int j=0;j<arr[i].length;j++){//arr[0].ltngthis 5
                 System.out.print(arr[i][j]+" ");//arr[0][0]
             }
-            System.out.println( );
+            System.out.println();
 
         }
     }
