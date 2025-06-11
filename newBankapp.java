@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Random;
 import java.util.Scanner;
 
 
@@ -26,8 +27,9 @@ class Account{
     public Account(String name,int accountnumber,double balance){
         this.name=name;
         this.accountnumber=accountnumber;
-        this.balance=balance;
+        this.balance=0;
     }
+    
     public void deposite(double amount){
         if(amount>0){
             balance+=amount;
@@ -46,16 +48,38 @@ class Account{
             System.out.println("not valid");
         }
     }
-
     public void checkbalance(){
         System.out.println("current balance"+balance);
+
     }
+     public void viewTransactions() 
+     {
+        if (transaction.isEmpty()) {
+            System.out.println("No transactions yet.");
+       } else {
+            for (Transaction t : transaction) {      
+           System.out.println(t);
+             }
+        }
+     }
+
+   public String getName() {
+        return name;
+    }
+
+   public int getAccountNumber() {
+        return getAccountNumber();
+     }
+
 
 
 
 }
 
-public class Bankapp {
+
+
+
+public class newBankapp {
     static Scanner sc =new Scanner(System.in);
         static Account account;
        public static void main(String[] args) {
@@ -63,7 +87,10 @@ public class Bankapp {
        
         System.out.println("enter your name:");
         String name=sc.nextLine();
-        new Account("arya", 12345678, 50000);
+         int accountno = new Random().nextInt(10000) + 10000;
+       
+       account = new Account(name, accountno, accountno);
+        
          
         System.out.println("created successfully: account number:");
         
@@ -71,8 +98,8 @@ public class Bankapp {
        int choice;
 
         do{
-            System.out.println("/n1.deposit/n2. withdraw/n3. check balance/n4. exit");
-            System.out.println("enter your choice"); 
+            System.out.println("/n1.deposit  /n2. withdraw/n3. view transaction /n4. check balance /n5. exit");
+         System.out.println("enter your choice"); 
         choice=sc.nextInt();     
           
         
@@ -89,12 +116,15 @@ public class Bankapp {
             account.withdraw(with);
                  break;
 
-           case 3:
-        
-           account.checkbalance();
+
+                case 3:
+                account.viewTransactions();
+                break;
+                case 4:
+                account.checkbalance();
                 break;
 
-          case 4:
+          case 5:
           System.out.println("4.exit");
                 
                 System.out.println("thankyou for using bankapp");
@@ -107,7 +137,7 @@ public class Bankapp {
         
             
     }  
-    while (choice !=4);
+    while (choice !=5);
      
         
     
