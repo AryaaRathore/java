@@ -1,7 +1,7 @@
 import java.util.HashMap;
 public class hashmap2 {
     public static void main(String[] args) {
-      //  String str="programming";
+     // String str="programming";
       String str="java is fun and java programming is good";
       String[] newStr=str.split(" ");
         HashMap<String,Integer> map=new HashMap<>();

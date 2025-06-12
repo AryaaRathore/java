@@ -98,7 +98,7 @@ public class newBankapp {
        int choice;
 
         do{
-            System.out.println("/n1.deposit  /n2. withdraw/n3. view transaction /n4. check balance /n5. exit");
+            System.out.println("\n1.deposit  \n2. withdraw\n3. view transaction \n4. check balance \n5. exit");
          System.out.println("enter your choice"); 
         choice=sc.nextInt();     
           
@@ -138,13 +138,7 @@ public class newBankapp {
             
     }  
     while (choice !=5);
-     
-        
     
-        
-
- 
-     
     
     }
 }
